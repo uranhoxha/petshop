@@ -1,0 +1,24 @@
+:root{
+    --white: #FDECEF;
+    --yellow: #FFD23F;
+    --orange: #DB5A42;
+    --blue: #3B3B58;
+    --black: #000F08;
+    --font1: 'Itim', cursive;
+    --font2: 'Indie Flower', cursive;
+}
+
+
+body{
+    background-color: var(--yellow);
+    padding: 0;
+    margin: 0;
+}
+
+.section-padding{
+    padding: 2.56rem;
+}
+
+html{
+    scroll-behavior: smooth;
+}

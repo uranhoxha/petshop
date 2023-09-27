@@ -1,0 +1,113 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding-top: 3rem !important;
+  background-color: var(--grey);
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: default;
+}
+
+nav{
+  font-family: var(--font1);
+}
+
+nav a {
+  margin: 0 2rem;
+  color: #000;
+  text-decoration: none;
+  transition: 300ms;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+nav a:hover {
+  color: var(--blue);
+  background-color: var(--yellow);
+}
+
+.nav-btn {
+  position: absolute;
+  top: 3.5rem;
+  right: 2rem;
+  z-index: 0;
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--black);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header nav {
+    position: fixed;
+    top: 0%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--orange);
+    transform: translateY(-100vh);
+    z-index: 99;
+
+  }
+
+  header nav a {
+    font-size: 5rem;
+    color: #fff;
+    padding: 1rem 2rem 1rem 2rem;
+  border-radius: 10px;
+  }
+
+  header .responsive_nav {
+    transform: none;
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 3.5rem;
+    right: 2rem;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 469px) {
+  header nav a {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  header nav a {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 261px) {
+  header nav a {
+    font-size: 2rem;
+  }
+}
+
+
+
+
